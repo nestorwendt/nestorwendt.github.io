@@ -4,105 +4,152 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Nestor Wendt" />
+    <meta name="description" content="Nestor Wendt's blog" />
 
-    <title>Hello, world!</title>
+    <title>Nestor Wendt's Blog</title>
 
     <!-- CSS -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css"
-      integrity="sha256-ShtKaqIDL7Iv2AJqPcHXS/s6kjSFvbypN5bRIlKTIk4="
-      crossorigin="anonymous"
     />
     <link rel="stylesheet" href="styles.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
   </head>
-
   <body>
-    <div class="container-fluid">
+    <div class="container-fluid bg-dark">
       <div class="row">
-        <!-- Profile section -->
-        <div class="col-md-3 profile d-flex flex-column align-items-center">
-          <img
-            src="images/nestor.jpg"
-            alt="Nestor Wendt"
-            class="img-fluid rounded-circle mb-3"
-          />
+        <!-- Sidebar -->
+        <div class="col-md-auto sidebar">
+          <div
+            class="d-flex flex-md-column flex-row flex-nowrap align-items-center"
+          >
+            <ul
+              class="nav nav-pills nav-flush flex-md-column flex-row flex-nowrap mb-auto mx-auto text-center w-100 p-3 align-items-center"
+            >
+              <li class="nav-item">
+                <a href="/" class="nav-link py-3 px-3" aria-label="Picture">
+                  <img
+                    src="images/nestor.jpg"
+                    alt="Nestor Wendt"
+                    class="rounded-circle"
+                  />
+                </a>
+              </li>
 
-          <h2>Nestor Wendt</h2>
+              <li class="nav-item">
+                <a href="/" class="nav-link py-3 px-3" aria-label="Home">
+                  <i class="fa fa-2x fa-home" aria-hidden="true"></i>
+                </a>
+              </li>
 
-          <div class="my-2 d-flex justify-content-center fa-links">
-            <a
-              href="https://github.com/nestorwendt"
-              class="mx-2"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><i class="fab fa-2x fa-github"></i
-            ></a>
+              <li class="nav-item">
+                <a
+                  href="https://github.com/nestorwendt"
+                  class="m-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub"
+                >
+                  <i class="fab fa-2x fa-github" aria-hidden="true"></i>
+                </a>
+              </li>
 
-            <a
-              href="https://x.com/nestorwendt"
-              class="mx-2"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><i class="fab fa-2x fa-x-twitter"></i
-            ></a>
+              <li class="nav-item">
+                <a
+                  href="https://x.com/nestorwendt"
+                  class="m-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="X"
+                >
+                  <i class="fab fa-2x fa-x-twitter" aria-hidden="true"></i>
+                </a>
+              </li>
 
-            <a href="mailto:nestorwendt@gmail.com" class="mx-2"
-              ><i class="fas fa-2x fa-envelope"></i
-            ></a>
-          </div>
+              <li class="nav-item">
+                <a
+                  href="mailto:nestorwendt@gmail.com"
+                  class="m-1"
+                  aria-label="Email"
+                >
+                  <i class="fas fa-2x fa-envelope" aria-hidden="true"></i>
+                </a>
+              </li>
 
-          <div class="mt-3">
-            <a href="#" class="resume-btn btn btn-success">Curriculum Vitae</a>
+              <li class="nav-item">
+                <a href="#" class="m-1" title="Résumé" , aria-label="Résumé">
+                  <i class="fa fa-2x fa-briefcase" aria-hidden="true"></i>
+                </a>
+              </li>
+
+              <li class="nav-item py-2 px-1">
+                <a
+                  href="/blog.html"
+                  class="fs-5 m-3 text-decoration-none"
+                  aria-label="Blog"
+                  >Blog</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a
+                  href="/about.html"
+                  class="fs-5 m-1 text-decoration-none"
+                  aria-label="About"
+                  >About</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
 
-        <!-- Content section -->
-        <div class="col-md-9 content">
-          <h2>Under construction...</h2>
-          <div
-            style="
-              width: 100%;
-              height: 0;
-              padding-bottom: 56%;
-              position: relative;
-            "
-          >
-            <iframe
-              src="https://giphy.com/embed/f7b9ltJ4FrhnsKjYx2"
-              width="30%"
-              height="30%"
-              style="position: absolute"
-              frameborder="0"
-              class="giphy-embed"
-              allowfullscreen
-            ></iframe>
+        <!-- Main content -->
+        <div class="col-md p-3 min-vh-100 bg-light">
+          <div class="content">
+            <!-- Introduction -->
+            <div class="introduction">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                suscipit leo at elit cursus, sit amet volutpat lectus lobortis.
+                Sed ultricies est vel quam tincidunt, sed tristique elit
+                sagittis. Cras convallis tempor elit at efficitur.
+              </p>
+            </div>
+
+            <hr />
+
+            <!-- Blog posts -->
+            <div class="post-entry">
+              <h2>
+                <a
+                  href="/posts/_template.html"
+                  class="post-link text-decoration-none"
+                  >Blog entry template</a
+                >
+              </h2>
+              <p class="publish-date">Published on May 24, 2024</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                suscipit leo at elit cursus, sit amet volutpat lectus lobortis.
+                Sed ultricies est vel quam tincidunt, sed tristique elit
+                sagittis. Cras convallis tempor elit at efficitur.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
     <!-- JS -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/js/all.min.js"
-      integrity="sha256-ShtKaqIDL7Iv2AJqPcHXS/s6kjSFvbypN5bRIlKTIk4="
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/js/all.min.js"></script>
   </body>
 </html>
