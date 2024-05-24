@@ -1,0 +1,43 @@
+body {
+  background-color: #000000;
+  color: white;
+}
+
+.profile {
+  background-color: #202020;
+  padding: 20px;
+  text-align: center;
+  height: 100vh;
+}
+
+.profile img {
+  width: 20vh;
+  border-radius: 50%;
+}
+
+.profile div {
+  margin: 10px 0;
+}
+
+.profile a {
+  color: white;
+  text-decoration: none;
+}
+
+.profile .fa-links a:hover {
+  color: #6c757d; /* Change text color to white */
+}
+
+.resume-btn {
+  background-color: #198a48;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.content {
+  padding: 20px;
+  overflow-y: auto;
+}
