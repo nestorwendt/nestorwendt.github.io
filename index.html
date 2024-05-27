@@ -6,7 +6,7 @@
     <meta name="author" content="Nestor Wendt" />
     <meta name="description" content="Nestor Wendt's blog" />
 
-    <title>Nestor Wendt's Blog</title>
+    <title>Nestor Wendt</title>
 
     <!-- CSS -->
     <link
@@ -26,89 +26,7 @@
     <div class="container-fluid bg-dark">
       <div class="row">
         <!-- Sidebar -->
-        <div class="col-md-auto sidebar">
-          <div
-            class="d-flex flex-md-column flex-row flex-nowrap align-items-center"
-          >
-            <ul
-              class="nav nav-pills nav-flush flex-md-column flex-row flex-nowrap mb-auto mx-auto text-center w-100 p-3 align-items-center"
-            >
-              <li class="nav-item">
-                <a href="/" class="nav-link py-3 px-3" aria-label="Picture">
-                  <img
-                    src="images/nestor.jpg"
-                    alt="Nestor Wendt"
-                    class="rounded-circle"
-                  />
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <a href="/" class="nav-link py-3 px-3" aria-label="Home">
-                  <i class="fa fa-2x fa-home" aria-hidden="true"></i>
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <a
-                  href="https://github.com/nestorwendt"
-                  class="m-1"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="GitHub"
-                >
-                  <i class="fab fa-2x fa-github" aria-hidden="true"></i>
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <a
-                  href="https://x.com/nestorwendt"
-                  class="m-1"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="X"
-                >
-                  <i class="fab fa-2x fa-x-twitter" aria-hidden="true"></i>
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <a
-                  href="mailto:nestorwendt@gmail.com"
-                  class="m-1"
-                  aria-label="Email"
-                >
-                  <i class="fas fa-2x fa-envelope" aria-hidden="true"></i>
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <a href="#" class="m-1" title="Résumé" , aria-label="Résumé">
-                  <i class="fa fa-2x fa-briefcase" aria-hidden="true"></i>
-                </a>
-              </li>
-
-              <li class="nav-item py-2 px-1">
-                <a
-                  href="/blog.html"
-                  class="fs-5 m-3 text-decoration-none"
-                  aria-label="Blog"
-                  >Blog</a
-                >
-              </li>
-
-              <li class="nav-item">
-                <a
-                  href="/about.html"
-                  class="fs-5 m-1 text-decoration-none"
-                  aria-label="About"
-                  >About</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
+        <div id="sidebar-container" class="col-md-auto sidebar"></div>
 
         <!-- Main content -->
         <div class="col-md p-3 min-vh-100 bg-light">
@@ -151,5 +69,13 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/js/all.min.js"></script>
+    <script>
+      // JavaScript to include the sidebar content
+      fetch("/sidebar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("sidebar-container").innerHTML = data;
+        });
+    </script>
   </body>
 </html>
